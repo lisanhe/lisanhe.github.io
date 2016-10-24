@@ -1,210 +1,363 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="author" content="智能社 - zhinengshe.com" />
-<meta name="copyright" content="智能社 - zhinengshe.com" />
-<title>智能社 - www.zhinengshe.com</title>
-<style>
-*{margin:0;padding:0;}
-body{ background:#000; text-align:center;}
-#c1{ background:url(img/game_bg_2_hd.jpg) no-repeat;}
-</style>
-<script src="js/utils.js"></script>
-<script src="js/sprite.js"></script>
-<script src="js/fish.js"></script>
-<script src="js/cannon.js"></script>
-<script src="js/bullet.js"></script>
-<script src="js/coin.js"></script>
-<script src="js/DieFish.js"></script>
-<script src="js/web.js"></script>
-<script>
-window.onload = function(){
-	var oC = document.getElementById("c1");
-	var gd = oC.getContext("2d");
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>个人网站</title>
+		<link rel="shortcut icon" href="img/li.png">
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/move.js"></script>
+		<script src="js/timemove.js"></script>
+		<script src="js/jquery-1.js"></script>
+		<script src="js/index.js"></script>
+	</head>
 	
-	loadImages({
-		fish2:"img/fish2.png",
-		fish3:"img/fish3.png",
-		fish4:"img/fish4.png",
-		fish5:"img/fish5.png",
-		fish1:"img/fish1.png",
-		bottom:"img/bottom.png",
-		cannon1:"img/cannon1.png",
-		cannon2:"img/cannon2.png",
-		cannon3:"img/cannon3.png",
-		cannon4:"img/cannon4.png",
-		cannon5:"img/cannon5.png",
-		cannon6:"img/cannon6.png",
-		cannon7:"img/cannon7.png",
-		bullet:"img/bullet.png",
-		coinAni1:"img/coinAni1.png",
-		coinAni2:"img/coinAni2.png",
-		web:"img/web.png"
-	},function(imgs){ 
+	<body>
+	<div class="navMaks"></div>
+	<div class="header">
+		<div class="nav clear">
+			<h3 id="logo"></h3>
+			<div class="ulList clear">
+				<ul id="bjList">
+					<li class="active">
+						<div class="bjcor1"><img src="img/agence.png" class="bjCor"></div>
+						<a href="javascript:;" class="cor1">首 页</a>
+					</li>
+					<li>
+						<div class="bjcor2"><img src="img/strategie.png" class="bjCor"></div>
+						<a href="javascript:;" class="cor2">HTML/CSS</a>
+					</li>
+					<li>
+						<div class="bjcor3"><img src="img/design.png" class="bjCor"></div>
+						<a href="javascript:;" class="cor3">Java Script</a>
+					</li>
+					<li>
+						<div class="bjcor4"><img src="img/techno.png" class="bjCor"></div>
+						<a href="javascript:;" class="cor4">个人简介</a>
+					</li>
+					<li>
+						<div class="bjcor5"><img src="img/reference.png" class="bjCor"></div>
+						<a href="javascript:;" class="cor5">作品集</a>
+					</li>
+					<li>
+						<div class="bjcor6"><img src="img/contact.png" class="bjCor"></div>
+						<a href="javascript:;" class="cor6">联系我</a>
+					</li>
+				</ul>
+			</div>
+			<div id="link">
+				<a href="https://www.facebook.com/agence.Kalixo" target="_blank" class="facebook"><img src="img/btn_facebook.png"></a>
+				<a href="https://twitter.com/agencekalixo" target="_blank" class="twitter"><img src="img/btn_twitter.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="box" id="box1">
+		<div class="bj1 bj""></div>
+		<div class="bj2 bj""></div>
+		<div class="rightbox"">
+			<div class="leftIcon">
+				<img src="img/Arrow.png" class="before">
+				<img src="img/Arrow_vert.png" class="after">
+			</div>
+			<div class="infoShow">
+				<ul id="listR1">
+				  <li><div></div><a href="#">友情链接</a></li>
+				  <li><div></div><a href="#">友情链接</a></li>
+				  <li><div></div><a href="#">友情链接</a></li>
+				  <li><div></div><a href="#">友情链接</a></li>
+				  <li><div></div><a href="#">友情链接</a></li>
+				  <li><div></div><a href="#">友情链接</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="txt1">
+			<div class="logo1">
+				<img src="img/logo1.png">
+			</div>
+			<div class="txtCon">
+				<p>一个人的性格决定他的机遇。如果你喜欢保持你的性格，那么，你就无权拒绝你的机遇。</p>
+				<br>
+				<p>——罗曼.罗兰.</p>
+			</div>
+			<div class="icon">
+				<div class="icon1">
+					<img src="img/fleche_bas_bc.png" class="before">
+					<img src="img/fleche_bas_gris.png" class="after">
+				</div>
+				<div class="icon1">
+					<img src="img/plus_bc.png" class="before">
+					<img src="img/plus_vert.png" class="after">
+				</div>
+				<div class="icon1" style="display:none">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="box" id="box2">
+		<div class="bj1 bj"></div>
+		<div class="bj2 bj"></div>
+		<div class="bj3 bj"></div>
+		<div class="rightbox">
+			<div class="leftIcon">
+				<img src="img/Arrow.png" class="before">
+				<img src="img/Arrow_rose.png" class="after">
+			</div>
+			<div class="infoShow">
+				<ul>
+					<li><a href="javascript:;" title="HTC页面"><img src="img/htc1.jpg" alt="HTC页面"></a></li>
+					<li><a href="javascript:;" title="HTC页面"><img src="img/htc2.jpg" alt="HTC页面"></a></li>
+					<li><a href="javascript:;" title="HTC页面"><img src="img/htc3.jpg" alt="HTC页面"></a></li>
+					<li><a href="javascript:;" title="HTC页面"><img src="img/htc4.jpg" alt="HTC页面"></a></li>
+					<li><a href="javascript:;" title="北京工商大学首页"><img src="img/bjgongyedaxue.jpg" alt="北京工商大学首页"></a></li>
+					<li><a href="javascript:;" title="个人网站"><img src="img/Dxiaoyan.jpg" alt="个人网站"></a></li>	
+				</ul>
+			</div>
+		</div>
+		<div class="txt1">
+			<div class="logo1">
+				<img src="img/logo2.png">
+			</div>
+			<div class="txtCon">
+				<p>熟悉HTML、DIV、CSS，熟悉页面架构和布局，对Web标准和标签语义化有深入理解。</p>
+				<p>熟练运用Photoshop，Dreamweaver，Firebug等常用网页设计制作软件。</p>
+				<p>能够解决不同主流浏览器的兼容性问题。</p>
+				<p>了解网页中SEO的一些基本理念。</p>
+			</div>
+			<div class="icon">
+				<div class="icon1">
+					<img src="img/fleche_bas_noir.png" class="before">
+					<img src="img/fleche_bas_gris.png" class="after">
+				</div>
+				<div class="icon1">
+					<img src="img/plus_noir.png" class="before" style="opacity: 1;">
+					<img src="img/plus_rose.png" class="after" style="opacity: 0;">
+				</div>
+				<div class="icon1">
+					<img src="img/fleche_haut_noir.png" class="before">
+					<img src="img/fleche_haut_gris.png" class="after">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="box" id="box3">
+		<div class="bj1 bj"></div>
+		<div class="bj2 bj"></div>
+		<div class="rightbox">
+			<div class="leftIcon">
+				<img src="img/Arrow.png" class="before">
+				<img src="img/Arrow_violet.png" class="after">
+			</div>
+			<div class="infoShow">
+		<!--	<h4>js 作品</h4>
+		-->		<ul>
+					<li><a href="javascript:;" title="拼图游戏"><img src="img/pingtu.jpg" alt="拼图游戏"></a></li>
+					<li><a href="javascript:;" title="接金币游戏"><img src="img/jeijingbi.jpg" alt="接金币游戏"></a></li>
+					<li><a href="javascript:;" title="打小蜜蜂游戏"><img src="img/daxiaomifeng.jpg" alt="打小蜜蜂游戏"></a></li>
+					<li><a href="javascript:;" title="淡雅图片展示"><img src="img/danya.jpg" alt="淡雅图片展示"></a></li>
+					<li><a href="javascript:;" title="京东商品放大镜效果"><img src="img/JDfangdajing.jpg" alt="京东商品放大镜效果"></a></li>
+					<li><a href="javascript:;" title="照片墙"><img src="img/zhaopianqiang.jpg" alt="照片墙"></a></li>	
+				</ul>
+			</div>
+		</div>
+		<div class="txt1">
+			<div class="logo1">
+				<img src="img/logo3.png">
+			</div>
+			<div class="txtCon">
+				<p> 熟悉Javascript脚本语言，jQuery框架，能独立编写脚本文件，实现网页特效和用户交互体验。</p>
+				<p>熟悉DOM、Ajax、JSON和事件处理机制</p>
+			</div>
+			<div class="icon">
+				<div class="icon1">
+					<img src="img/fleche_bas_noir.png" class="before">
+					<img src="img/fleche_bas_gris.png" class="after">
+				</div>
+				<div class="icon1">
+					<img src="img/plus_noir.png" class="before">
+					<img src="img/plus_violet.png" class="after">
+				</div>
+				<div class="icon1">
+					<img src="img/fleche_haut_noir.png" class="before">
+					<img src="img/fleche_haut_gris.png" class="after">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="box" id="box4">
+		<div class="bj1 bj"></div>
+		<div class="bj2 bj"></div>
+		<!--<div class="rightbox">
+			<div class="leftIcon">
+				<img src="img/index_img/Arrow.png" class="before"/>
+				<img src="img/index_img/Arrow_orange.png" class="after"/>
+			</div>
+			<div class="infoShow"></div>
+		</div>-->
+		<div class="txt1">
+			<div class="logo1">
+				<img src="img/logo4.png">
+			</div>
+			<div class="txtCon">
+				<p>2014/07~至今</p>
+				<p>爱国者集团</p>
+				<p>职责：前端开发</p>
+				<br>
+				<p>2011/09~2015/06</p>
+				<p>学校：石家庄建工科技学院</p>
+				<p>学历：统招大专</p>
+				<p>专业：网站规划与开发</p>
+				<p>课程：C语言，C++，MySql,PHP,HTML...</p>	
+			</div>
+			<div class="icon">
+				<div class="icon1">
+					<img src="img/fleche_bas_noir.png" class="before">
+					<img src="img/fleche_bas_gris.png" class="after">
+				</div>
+				<div class="icon1" style="display:none">
+					<img src="img/plus_noir.png" class="before">
+					<img src="img/plus_orange.png" class="after">
+				</div>
+				<div class="icon1">
+					<img src="img/fleche_haut_noir.png" class="before">
+					<img src="img/fleche_haut_gris.png" class="after">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="box" id="box5">
+		<!--<div class="rightbox">
+			<div class="leftIcon">
+				<img src="img/index_img/Arrow.png" class="before"/>
+				<img src="img/index_img/Arrow_bleu.png" class="after"/>
+			</div>
+			<div class="infoShow"></div>
+		</div>-->
+		<div class="nos">
+			<div class="bjImg"><img src="img/logo.png"></div>
+			<h4>作品集/Personal Portfolio</h4>
+			<ul class="clear">
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj1.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;" title="个人网站"><img src="img/nos_logo1.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj2.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;" title="HTC页面"><img src="img/nos_logo2.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj3.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;" title="HTC页面"><img src="img/nos_logo3.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj4.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;" title="HTC页面"><img src="img/nos_logo4.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj5.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;" title="HTC页面"><img src="img/nos_logo5.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj6.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;" title="北京工商大学首页"><img src="img/nos_logo6.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj7.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;" title="拼图游戏"><img src="img/nos_logo7.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj8.gif&quot;) no-repeat; opacity: 0;"></div>
+					<a href="javascript:;" title="接金币游戏"><img src="img/nos_logo8.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj9.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;><img src="img/nos_logo9.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj10.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;" title="淡雅图片展示"><img src="img/nos_logo10.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj11.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;" title="京东商品放大镜效果"><img src="img/nos_logo11.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj12.gif&quot;) no-repeat;"></div>
+					<a href="javascript:;" title="照片墙"><img src="img/nos_logo12.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj13.gif&quot;) no-repeat; opacity: 0;"></div>
+					<a href="#" title="待续。。。"><img src="img/nos_logo13.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj14.gif&quot;) no-repeat;"></div>
+					<a href="#" title="待续。。。"><img src="img/nos_logo14.png"></a>
+				</li>
+				<li>
+					<div class="bjcor" style="background:url(&quot;img/liBj15.gif&quot;) no-repeat;"></div>
+					<a href="#" title="待续。。。"><img src="img/nos_logo15.png"></a>
+				</li>
+			</ul>
+			<div class="listbot"><img src="img/Ombre_800.png"></div>
+			<div class="icon">
+				<div class="icon1">
+					<img src="img/fleche_bas_noir.png" class="before">
+					<img src="img/fleche_bas_gris.png" class="after">
+				</div>
+				<div class="icon1" style=" display:none">
+					<img src="img/plus_noir.png" class="before">
+					<img src="img/plus_orange.png" class="after">
+				</div>
+				<div class="icon1">
+					<img src="img/fleche_haut_noir.png" class="before">
+					<img src="img/fleche_haut_gris.png" class="after">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="box" id="box6">
+		<div class="contact clear">
+			<h4>联系我/Contact Me</h4>
+			<div class="map">
+				<iframe scrolling="no" marginheight="0" marginwidth="0" src="img/1965737215.htm" height="510" frameborder="0" width="520"></iframe>
+			</div>
+			<div class="info">
+				<h5>个人信息/Personal Information</h5>
+				<div class="inrCon">
+					<p><span>姓名： 李三河</span></p>
+					<p><span>电话： 15210220552</span></p>
+					<p><span>QQ： 1315209336</span></p>
+					<p><span>邮箱： 1315209336@qq.com</span></p>
+					<p><span>地址：北京市昌平区回龙观镇</span></p>
+					<p><span>如果您对我感兴趣的话，可以下载我的个人简历哦！</span></p>
+					<div class="resume"><a href="resume/lisanhe web.doc" title="点击下载我的简历">Download resume</a></div>
+				</div>
+			</div>
+		</div>
 		
-		//生成鱼
-		var aFish = [];
-		setInterval(function(){
-			//鱼
-			var f = new Fish(imgs,rnd(1,6));
-			
-			if(Math.random()<0.5){
-				f.x = -100;
-			} else {
-				f.x = oC.width+100;
-				f.rotate = -90;	
-			}
-			
-			f.y = rnd(0,oC.height);
-			f.speed = 2;
-			aFish.push(f);	
-		},200);
-		
-		//炮台
-		var bottom = new Sprite(imgs.bottom);
-		bottom.w = 765;
-		bottom.h = 70;
-		
-		bottom.x = oC.width/2;
-		bottom.y = oC.height - bottom.h/2;
-		
-		//炮台
-		var cannon = new Cannon(imgs,7);
-		cannon.x = 440;
-		cannon.y = 560;
-		
-		oC.onmousemove = function(ev){
-			var x = ev.clientX - oC.offsetLeft - cannon.x;
-			var y = oC.offsetTop + cannon.y - ev.clientY;
-			
-			var a = 90 - a2d(Math.atan2(y,x));
-
-			cannon.rotate = a;
-			
-			b.rotate = cannon.rotate;
-		};
-		
-		var b = new Bullet(imgs.bullet,7);
-		b.x = cannon.x;
-		b.y = cannon.y; 
-		
-		var aBullet = [];
-		
-		//声音
-		
-		oC.onclick = function(){
-			var oA = new Audio();
-			oA.src = "snd/cannon.mp3";
-		 	oA.play();
-			var b = new Bullet(imgs.bullet,7);
-			b.x = cannon.x;
-			b.y = cannon.y; 
-			b.speed = 5;
-			b.rotate = cannon.rotate;
-			aBullet.push(b);
-		};
-		
-		
-		//存金币
-		var aCoin = [];
-		//存死鱼
-		var aDieFish = [];
-		//存渔网
-		var aWeb = [];
-		 
-		
-		setInterval(function(){
-			gd.clearRect(0,0,oC.width,oC.height);
-			
-			for(var i = 0; i < aFish.length; i++){
-				aFish[i].draw(gd);
-				aFish[i].move();
-			}
-			
-			//画炮台
-			bottom.draw(gd);
-			
-			//画炮筒
-			cannon.draw(gd);
-			
-			//画炮弹
-			for(var i = 0; i < aBullet.length; i++){
-				aBullet[i].draw(gd);
-				aBullet[i].move();
-			}
-			
-			//画金币
-			for(var i = 0; i < aCoin.length; i++){
-				aCoin[i].draw(gd);
-				aCoin[i].move();
-			}
-			
-			//画死鱼
-			for(var i = 0; i < aDieFish.length; i++){
-				aDieFish[i].draw(gd);
-				aDieFish[i].move();
-				
-				(function(index){
-					setTimeout(function(){
-						aDieFish.splice(index,1);
-					},300);
-				})(i);
-			}
-			//画渔网
-			for(var i = 0; i < aWeb.length; i++){
-				aWeb[i].draw(gd);
-				aWeb[i].scale += 0.1;
-				
-				if(aWeb[i].scale > 1.2){
-					aWeb[i].scale = 1;
-					aWeb.splice(i--,1);
-				}
-			}
-			
-			//碰撞检测
-			for(var i = 0; i < aBullet.length; i++){
-				for(var j = 0; j < aFish.length; j++){
-					if(aBullet[i].collTest(aFish[j])){
-						
-						var x = aFish[j].x;
-						var y = aFish[j].y;
-						var type = aFish[j].type;
-						var rotate = aFish[j].rotate;
-						 
-						 aBullet.splice(i--,1);
-						 aFish.splice(j--,1);
-						 
-						 //金币
-						 var coin = new Coin(imgs,type);
-						 coin.x = x;
-						 coin.y = y;
-						 aCoin.push(coin);
-						 
-						 //死鱼
-						 var dieFish = new DieFish(imgs,type);
-						 dieFish.x = x;
-						 dieFish.y = y;
-						 aDieFish.push(dieFish);
-						 
-						 //出网
-						 var web = new Web(imgs.web,type);
-						 web.x = x;
-						 web.y = y;
-						 aWeb.push(web);
-					}
-				}
-			}
-		},30);
-	}); 
-	
- 
-};
-
-</script>
-</head>
-
-<body>
-<canvas id="c1" width="800" height="600"></canvas>
-</body>
+	</div>
+	<div id="footer">
+		<div class="upIcon">
+			<img src="img/info.png">
+		</div>
+		<div class="footerCon clear">
+			<h2>个人信息/Personal Information</h2>
+			<div class="leftF">
+				<p>地址：</p>
+				<p>北京市昌平区回龙观镇</p>
+			</div>
+			<div class="line"></div>
+			<div class="centerF">
+				<p>联系方式：</p>
+				<p>姓名： 李三河</p>
+				<p>电话： 15210220552</p>
+				<p>邮箱： 1315209336@qq.com</p>
+			</div>
+			<div class="line"></div>
+			<div class="rightF">
+				<p>如果您对我感兴趣的话，可以下载我的个人简历哦！</p>
+				<div class="resume"><a href="resume/lisanhe web.doc" title="点击下载我的简历">Download resume</a></div>
+			</div>
+		</div>
+	</div>
+	</body>
 </html>
