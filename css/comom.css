@@ -1,0 +1,42 @@
+/*导航*/
+.nav{padding:10px 20px;}
+.nav h2{text-indent:-9999px;height:70px;width: 355px;background:url(../images/logo.png) no-repeat center;}
+.nav-bar li{float:left;padding:0 17px;height: 76px;text-align:center;line-height:76px;cursor:pointer;}
+.nav-bar li.bar-color{border-bottom:3px solid #000;}
+.nav-bar li:hover {border-bottom:3px solid #000;}
+/*底部*/
+.copyright{line-height: 36px;text-align: center;font-size:12px;color:#a9a9a9;}
+/*banner*/
+.banner{min-width: 1000px;background:url(../images/banner.jpg) no-repeat center;height: 498px;}
+.banner-border{min-width: 1000px;background:url(../images/banner-border.jpg) no-repeat center;height: 12px;}
+
+/*首页内容*/
+
+.content{border:3px solid #ffc000;border-radius:0 0 15px 15px;width: 995px;margin:0 auto;border-top:none;}
+.content .content-box{width: 990px;background:url(../images/banner-box.png) no-repeat center;height:213px;position:relative;margin:0 auto;}
+.content .content-box-text{width: 543px;height: 126px;position: absolute;left: 260px;top: 48px;border-radius: 59px;}
+.content .content-text{padding:0 10px 12px;}
+.content .content-text li{float:left;}
+.content .content-text>.li1{width:304px;position:relative;}
+.content .content-text .li1-title{color:#fcb000;position:absolute;top: -54px;left: 10px;}
+.content .content-text .li1-title h3{font-size:20px;}
+.content .content-text .li1-title  span{font-weight: bold;font-size: 12px;}
+.content .content-text .li1-title  span em{font-style:italic;font-size: 14px;padding-left: 60px;}
+.content .content-text .li1-text{width:295px;padding-right:9px;border-right:3px dashed #fcb000; text-indent: 2em;font-size: 12px;}
+.content .content-text>.li2{width:360px;border-right:3px dashed #fcb000;}
+.content .content-text .li2 img{width:155px;}
+.content .content-text .li2 .li2_text{font-size: 14px;color:#11bcf8;padding:17px 0 0 45px;}
+.content .content-text .li2 .li2_button{background:url(../images/li2_button.png) no-repeat left;height: 14px;color:#1fc3fc;font-size: 12px;line-height: 14px;padding-left: 18px;margin-left: 56px;}
+.content .content-text .li3 .li3_text{padding:0 18px 5px 22px;}
+.content .content-text .li3 .li3_text div{color:#ffc000;font-size: 14px;}
+.content .content-text .li3 .li3_button{background:url(../images/li3_button.png) no-repeat center;width:106px;height:25px;text-align: center;line-height:24px;color:#fff;font-size:14px;margin-left: 22px;}
+.content .content-text .li3 .li3_img{width:146px;height:81px;margin-top:-20px;}
+/*内容页公共样式*/
+.banner_adver{min-width: 1000px;background:url(../images/banner_advert.jpg) no-repeat center;height: 513px;}
+.banner_adve-border{min-width: 1000px;background:url(../images/banner_adve-borde.png) no-repeat center;height: 12px;}
+.content .content_adver-box{width: 976px;background:url(../images/banner_adver-box.png) no-repeat center;height:74px;position:relative;margin:0 auto;margin-right: 13px;text-align: center;line-height: 58px;color: #fcb000;font-size:36px;}
+.content .content_adver_text{padding:10px 36px;color:#000;font-size:20px;line-height: 36px;text-indent:2em;}
+.content .content_adver_text .adver_text1{width:453px;padding-right:50px;border-right:3px dashed #ffc000; }
+.content .content_adver_text .adver_text1 h4,.content .content_adver_text .adver_text1 h5{text-indent: 0em;}
+.content .content_adver_text .adver_text1 span{text-indent: 2em;display:block;}
+.content .content_adver_text .adver_text2{border:none;padding-left:46px;padding-right: 0;}

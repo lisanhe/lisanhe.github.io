@@ -1,0 +1,6 @@
+index   首页
+about_us	关于我们
+features	教学特色
+pattern		教学模式
+team		团队介绍
+contact_us	联系我们
